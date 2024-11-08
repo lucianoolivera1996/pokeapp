@@ -1,0 +1,168 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100dvh;
+    width: 100%;
+
+    font-family: 'Open Sans';
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    background: #680747 !important;
+    color: #ffffff;
+}
+
+header {
+    margin: 30px auto;
+}
+
+form {
+    width: 300px;
+    margin: 10px auto 0;
+
+    text-align: center;
+}
+
+form > label, input, button {
+    height: 25px;
+}
+
+form input {
+    width: 60%;
+}
+
+form button {
+    width: 20%;
+
+    border-style: none;
+    border-radius: 5px;
+
+    background-color: #f70776;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+}
+
+table tr {
+    height: 25px;
+}
+
+th, td {
+    border: 1px solid #680747;
+    border-collapse: collapse;
+    background-color: #f70776;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    background-color: #c3195d;
+
+    font-size: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.card {
+    width: 350px;
+    margin: 0 auto 30px;
+
+    border-radius: 10px;
+
+    background-color: #680747;
+}
+
+.output {
+    width: 340px;
+    height: 400px;
+    margin: 10px auto 5px;
+
+    border-radius: 10px;
+
+    background-color: #f70776;
+}
+
+.name-and-id {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.size {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.sprite {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.types {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    width: 100%;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    background-color: #f70776;
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 250px;
+        font-size: 1.2rem;
+    }
+
+    form {
+        width: 200px;
+    }
+
+    form > button {
+        font-size: 1rem;
+    }
+
+    .output {
+        width: 240px;
+    }
+}
