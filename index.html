@@ -15,22 +15,20 @@
             <h1 class="title">PokeApp</h1>
         </header>
         <main class="card">
-            <form action="">
+            <form id="form">
                 <label for="search-input">Search for Pokémon Name or ID:</label>
-                <input id="search-input" type="text">
-                <button id="search-button">Search</button>
+                <input id="search-input" type="text" required>
+                <button id="search-button" type="submit">Search</button>
             </form>
             <div class="output">
                 <div class="name-and-id">
-                    <p id="name"></p>
-                    <p id="id"></p>
+                    <p><span id="pokemon-name"></span> <span id="pokemon-id"></span></p>
                 </div>
                 <div class="size">
-                    <p id="weight"></p>
-                    <p id="height"></p>
+                    <p><span id="weight"></span> <span id="height"></span></p>
                 </div>
                 <div class="sprite"></div>
-                <div class="types"></div>
+                <div id="types"></div>
                 <div class="stats">
                     <table>
                         <thead>

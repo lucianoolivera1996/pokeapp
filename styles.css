@@ -111,12 +111,20 @@ th, td {
     align-items: center;
 }
 
+.name-and-id > p {
+    margin-left: 10px;
+}
+
 .size {
     width: 100%;
     height: 25px;
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+.size > p {
+    margin-left: 10px;
 }
 
 .sprite {
@@ -128,11 +136,11 @@ th, td {
     
 }
 
-.types {
+#types {
     width: 100%;
     height: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -148,7 +156,19 @@ th, td {
     background-color: #f70776;
 }
 
-@media screen and (max-width: 400px) {
+#sprite {
+    width: 100px;
+    height: 100px;
+}
+
+.type {
+    margin-left: 10px;
+    padding: 3px;
+    border: 2.5px solid #680747;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 430px) {
     .card {
         width: 250px;
         font-size: 1.2rem;
